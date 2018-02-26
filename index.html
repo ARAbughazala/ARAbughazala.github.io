@@ -3,7 +3,7 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -54,7 +54,7 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
+    <div class="w3-bar w3-hide" id="myNavbar">
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
         </a>
@@ -87,27 +87,31 @@
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <p class="w3-center"><em>I love photography</em></p>
-    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-center"><em>Aspiring to Learn and Create</em></p>
+    <p>Hello, My name is AbdulRahman Abughazala. I am originally from Jeddah, Saudi Arabia. I have been studying in the united states since i was 10 years old, over the years i started to love
+       technology, computers, and engineering. I go to school at California State University, Chico and I am on my way to becoming a mechatronic engineer. During my college experience i have made
+       it my passion to cultivate my understand of machine and computers. I always thought the combination of both machine and computing was fascinating, eventully i would like to design my own
+       production machines. I strive to learn and better my self, whether it may be programming, machining, designing or alternative skills.  </p>
     <div class="w3-row">
         <div class="w3-col m6 w3-center w3-padding-large">
-            <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-            <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            <p><b><i class="fa fa-user w3-margin-right"></i>AbdulRahman Abughazala</b></p><br>
+            <img src="img/avatar.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Aw didnt load" width="283" height="400">
         </div>
 
         <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-            <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="w3-col m6 w3-hide-small w3-padding-large" style="margin-top: 65px">
+            <p>Welcome to my journey. <br> I made this website to share with the world everything that piques my interest, I hope you enjoy it as much as I do!</p><br>
+            <div class="w3-panel w3-light-grey">
+                <span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+                <p class="w3-xlarge" style="margin-top:-40px">
+                    <i>"Work hard in silence, let success make the noise"</i></p>
+            </div>
         </div>
     </div>
     <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>MEMES</p>
     <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
     </div>
     <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
     <div class="w3-light-grey">
@@ -285,9 +289,10 @@
     function myFunction() {
         var navbar = document.getElementById("myNavbar");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white ";
         } else {
             navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white " + " w3-hide ";
         }
     }
 
