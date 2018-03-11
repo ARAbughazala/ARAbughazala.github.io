@@ -10,20 +10,23 @@
 </head>
 <body>
 
-<embed id="resume" src="pdf/AbdulRahman%20Abughazala%20Resume.pdf" width="1920px" height="1080px">
+
 
 <script>
     $(document).ready(function(){
         var resume = $("#resume");
-        console.log(resume);
-        var width = $(document).width();
-        var height = $(document).height();
-        console.log("screen width:", width);
-        console.log("screen width:", height);
+        var width = $(window).width();
+        var height = $(window).height();
 
-        resume.width = width;
-        resume.height = height;
+        $("body").html("<embed id=\"resume\" src=\"pdf/AbdulRahman%20Abughazala%20Resume.pdf\" width=\"" + width + "\" height=\"" + height + "px\">");
 
+        $(window).resize(function() {
+            var resume = $("#resume");
+            var width = $(window).width();
+            var height = $(window).height();
+
+            $("body").html("<embed id=\"resume\" src=\"pdf/AbdulRahman%20Abughazala%20Resume.pdf\" width=\"" + width + "\" height=\"" + height + "px\">");
+        });
     });
 </script>
 </body>
