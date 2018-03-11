@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Abughazala's Resume</title>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 <body>
 
-<embed src="pdf/AbdulRahman%20Abughazala%20Resume.pdf" width="1920px" height="1080px">
+<embed id="resume" src="pdf/AbdulRahman%20Abughazala%20Resume.pdf" width="1920px" height="1080px">
 
+<script>
+    $(document).ready(function(){
+        var resume = $("#resume");
+        console.log(resume);
+        var width = $(document).width();
+        var height = $(document).height();
+        console.log("screen width:", width);
+        console.log("screen width:", height);
+
+        resume.width = width;
+        resume.height = height;
+
+    });
+</script>
 </body>
 </html>
