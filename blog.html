@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
-    <title>Abughazala's Blog</title>
+<header class="w3-container w3-center w3-padding-32">
+    <h1><b>Projects and Activity BLOG</b></h1>
+    <p>This blog is a work in progress<span class="w3-tag">EXPERIMENTAL</span></p>
+</header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/w3.css">
@@ -47,11 +49,49 @@
     and is wrapped around the whole page content, except for the footer in this example -->
     <div class="w3-content" style="max-width:1400px">
         <!-- Header -->
-        <header class="w3-container w3-center w3-padding-32">
-            <h1><b>Life and experience blog</b></h1>
-        </header>
-        <!------------------------------------------------------------------ Lego BLOG ----------------------------------------------------------------------------------->
-        <!------------------------------------------------------------------- TEMPLATE ----------------------------------------------------------------------------------->
+        <!----------------------------------------------------------------- PLC BLOG --------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------- TEMPLATE ----------------------------------------------------------------------------------------->
+        <div class="w3-row ">
+
+            <div class="w3-col s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-container">
+                        <h3><b>Jar Sorter</b></h3>
+                        <h5>Automation Design Project, <span class="w3-opacity">December 13, 2016</span></h5>
+                    </div>
+
+                    <div class="w3-content w3-display-container">
+                        <iframe  class="mySlides3"  width="100%" height="659" src="https://www.youtube.com/embed/lr3591YDXAQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+                    </div>
+                    <div class="w3-container">
+                        <div class="w3-row">
+                            <div class="w3-col m4 s12 " >
+                                <h4>Objective</h4><p class="w3-border-top w3-margin-right">Create an automated machine that can identify faults in the process of applying the lids to peanut butter jars</p>
+                            </div>
+                            <div class="w3-col m8 s12 w3-border-left">
+                                <div class="w3-margin-left ">
+                                    <h4>Description</h4><p class="w3-border-top">This project was one of the first projects i worked on as a Mechatronic Engineering Student. Our professor acted as
+                                    a client that was part of a peanut butter plant. He was having trouble with some of machines not applying the lids on correctly, and had no way of knowing whether
+                                    the jars are correctly being packaged or not, losing efficiency because the plant would check the lids at the end of the process. Using B&R's PP35 Power Panel Controller,
+                                    switches, pneumatic actuators and ladder logic I worked with a team of 2 mechanical engineering Students and we came up with a way to check whether the lids were on, off, or
+                                    crossthreaded after lids are applied, than separating the bad jars from the good ones, while not stopping nor slowing down the line.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <!--------------------------------------------------------------------- END TEMPLATE ----------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <!------------------------------------------------------------------ Lego BLOG ----------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------- TEMPLATE ----------------------------------------------------------------------------------------->
         <div class="w3-row ">
 
             <div class="w3-col s12">
@@ -61,18 +101,19 @@
                         <h3><b>LEGO Pole Climber Bot</b></h3>
                         <h5>Machine Design Final Project, <span class="w3-opacity">May 15, 2018</span></h5>
                     </div>
-                    <div class="w3-content w3-display-container w3-margin-bottom">
-                        <img class="mySlides" src="img/bot6.jpg" style="width:100%">
-                        <img class="mySlides" src="img/bot1.jpg" style="width:100%">
-                        <img class="mySlides" src="img/bot2.jpg" style="width:100%">
-                        <img class="mySlides" src="img/bot3.JPG" style="width:100%">
-                        <img class="mySlides" src="img/bot4.JPG" style="width:100%">
-                        <img class="mySlides" src="img/bot5.PNG" style="width:100%">
-                        <iframe  class="mySlides"  width="100%" height="659" src="https://www.youtube.com/embed/lX7MDhg-5XM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides1" src="img/bot6.jpg" style="width:100%">
+                        <img class="mySlides1" src="img/bot1.jpg" style="width:100%">
+                        <img class="mySlides1" src="img/bot2.jpg" style="width:100%">
+                        <img class="mySlides1" src="img/bot3.JPG" style="width:100%">
+                        <img class="mySlides1" src="img/bot4.JPG" style="width:100%">
+                        <img class="mySlides1" src="img/bot5.PNG" style="width:100%">
+                        <img class="mySlides1" src="img/bot7.jpg" style="width:100%">
+                        <iframe  class="mySlides1"  width="100%" height="659" src="https://www.youtube.com/embed/lX7MDhg-5XM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
                     </div>
+
                     <div class="w3-container">
                         <div class="w3-row">
                             <div class="w3-col m4 s12 " >
@@ -108,13 +149,13 @@
                         <h3><b>UART Microcontroller Game</b></h3>
                         <h5>Digital System Design Final Project, <span class="w3-opacity">May 10, 2018</span></h5>
                     </div>
-                    <div class="w3-content w3-display-container w3-margin-bottom">
-                        <img class="mySlides" src="img/dig1.jpg" style="width:100%">
-                        <img class="mySlides" src="img/dig2.jpg" style="width:100%">
-                        <iframe  class="mySlides"  width="100%" height="659" src="https://www.youtube.com/embed/naBUeBWuAtI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    <div class="w3-content w3-display-container">
+                        <img class="mySlides2" src="img/dig1.jpg" style="width:100%">
+                        <img class="mySlides2" src="img/dig2.jpg" style="width:100%">
+                        <iframe  class="mySlides2"  width="100%" height="659" src="https://www.youtube.com/embed/naBUeBWuAtI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
                     </div>
                     <div class="w3-container">
                         <div class="w3-row">
@@ -137,7 +178,7 @@
             <br>
         </div>
         <!--------------------------------------------------------------------- END TEMPLATE ----------------------------------------------------------------------------------->
-        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-off">
         <a href="blog.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -149,72 +190,27 @@
     </footer>
 
 
-    <script>
-        function myMap()
-        {
-            myCenter=new google.maps.LatLng(41.878114, -87.629798);
-            var mapOptions= {
-                center:myCenter,
-                zoom:12, scrollwheel: false, draggable: false,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2", "mySlides3"];
+            showDivs(1, 0);
+            showDivs(1, 1);
 
-            var marker = new google.maps.Marker({
-                position: myCenter,
-            });
-            marker.setMap(map);
-        }
-
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Change style of navbar on scroll
-        window.onscroll = function() {myFunction()};
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white ";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            function plusDivs(n, no) {
+                showDivs(slideIndex[no] += n, no);
             }
-        }
 
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
+            function showDivs(n, no) {
+                var i;
+                var x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex[no]-1].style.display = "block";
             }
-        }
-    </script>
-    <!--slideshow script-->
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-        }
-    </script>
+        </script>
 
 </body>
 </html>
