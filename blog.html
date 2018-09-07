@@ -191,6 +191,18 @@
 
 
         <script>
+
+            // Change style of navbar on scroll
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white ";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white " + " w3-hide ";
+                }
+            }
             var slideIndex = [1,1];
             var slideId = ["mySlides1", "mySlides2", "mySlides3"];
             showDivs(1, 0);
